@@ -1,0 +1,19 @@
+//
+// Prefix header for all source files of the 'NFSYSUNEWS' target in the 'NFSYSUNEWS' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "MKNetworkKit.h"
+    #import "IIViewDeckController.h"
+#endif
+
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+#define ViewBoundsSize [UIScreen mainScreen].bounds.size
